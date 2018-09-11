@@ -100,7 +100,7 @@ title: Home
     {% if page == paginator.page %}
       <span class="page-numbers  current">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{site.baseurl}}/" class="page-numbers  current">{{ page }}</a>
+      <a href="/" class="page-numbers  current">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}index.html" class="page-numbers current">{{ page }}</a>
     {% endif %}
