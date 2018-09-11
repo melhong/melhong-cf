@@ -1,0 +1,75 @@
+<header id="header" class="vlog-site-header vlog-header-shadow hidden-xs hidden-sm">
+<div class="vlog-header-2">
+	<div class="vlog-header-wrapper">
+		<div class="container vlog-header-middle">
+			<div class="vlog-slot-c">	
+			<div class="vlog-site-branding ">
+				<h1 class="site-title h1"><a href="index.html" rel="home"></a></h1>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="vlog-header-bottom">
+		<div class="container">
+			<div class="vlog-slot-c">
+				<nav class="vlog-main-navigation">	
+					<ul id="menu-primary-menu" class="vlog-main-nav vlog-menu">
+					<!-- TEST NAV---------------- -->
+							{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13 {% if page.url == item.url  %} current_page_item {% endif %}"><a href="{{site.baseurl}}{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a></li>
+  							 {% endfor %}
+					<!-- TEST NAV ENDS *********************** -->
+					</ul>
+				
+				</nav>	
+ 
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- nav for destop ends -->	
+<!-- nav for destop Sticky Starts -->	
+<div id="vlog-sticky-header" class="vlog-sticky-header vlog-site-header vlog-header-shadow vlog-header-bottom hidden-xs hidden-sm">
+		<div class="container">
+			<div class="vlog-slot-l">						
+				<div class="vlog-site-branding ">
+					<span class="site-title h1"><a href="index.html" rel="home"></a></span>
+				</div>
+			</div>
+				<div class="vlog-slot-c">
+					<nav class="vlog-main-navigation">	
+				<ul id="menu-primary-menu-1" class="vlog-main-nav vlog-menu">
+				{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15 {% if item.url == page.url %} current_page_item {% endif %}">
+                              <a href="{{site.baseurl}}{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a></li>
+  							 {% endfor %}
+					</ul>
+					</nav>     
+				</div> 	
+		
+		</div>
+</div>	
+<!-- nav for destop Sticky Ends -->	
+<!-- Header nav for Mobile Device start -->
+<div id="vlog-responsive-header" class="vlog-responsive-header hidden-lg hidden-md">
+	<div class="container">	
+		<div class="vlog-site-branding ">
+			<span class="site-title h1"><a href="index.html" rel="home"></a></span>
+		</div>
+				
+	</div>
+	<div id="dl-menu" class="dl-menuwrapper">
+				<button class="dl-trigger"><i class="fa fa-bars"></i></button>	
+				<ul id="menu-primary-menu-2" class="vlog-mob-nav dl-menu">
+				{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15 {% if item.url == page.url %} current_page_item {% endif %}">
+                              <a href="{{site.baseurl}}{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a>
+                              </li>
+  							 {% endfor %}
+					</ul>				
+	</div>
+
+</div>
+
+<!-- Header nav for Mobile Device Ends-->

@@ -1,0 +1,10 @@
+- name: མདུན་ངོས།
+  url: "/index.html"
+- name: དྲ་ཚིགས་ཀྱི་སྐོར།
+  url: "/about.html"
+- name: དཀར་ཆག
+  url: "/content.html"
+- name: འབྲེལ་གཏུགས།
+  url: "/contact.html"
+- name: འདྲ་པར།
+  url: "/gallery.html"
