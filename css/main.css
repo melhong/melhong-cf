@@ -1,0 +1,25 @@
+---
+
+---
+@font-face {
+    font-family: 'qomolangma-uchen_sarchungRg';
+    src: url('{{site.baseurl}}/assets/fonts/qomolangma-uchensarchung-webfont.html') format('woff2'),
+         url('{{site.baseurl}}/assets/fonts/qomolangma-uchensarchung-webfont.woff') format('woff'),
+     url('{{site.baseurl}}assets/fonts/qomolangma-uchensarchung-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+{% include css/style.css %}
+
+.vlog-comment{border:0px}
+.vlog-header-wrapper{
+	background-image: url({{site.baseurl}}/assets/themePic/Logo-Banner-1000X125-left-with-BG.png);
+}
+button{border:0px;background:none;padding:5px 10px;}
+.gallery-thumbnail{height:auto}
+.gallery-icon{overflow:hidden;height:200px;}
+.gallery-columns-3 .gallery-item{}
+
+
+

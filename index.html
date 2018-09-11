@@ -1,0 +1,120 @@
+---
+layout: mdefault
+title: Home
+
+---
+<div id="content" class="vlog-site-content">
+    <div class="vlog-featured-2 vlog-featured-slider">
+        <!-----Test Slider Starts here --------- -->
+{% for post in site.posts  %}
+         <div class="vlog-featured-item video">
+            <div class="vlog-cover-bg">
+            <a class="vlog-cover" href="{{site.baseurl}}{{post.url}}">
+			{% if post.thumbnail %}	
+			    <img width="1500" height="500" src="{{site.baseurl}}{{post.thumbnail}}" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />        
+   				 {% else %}
+				<img width="1500" height="500" src="{{site.baseurl}}assets/noimage.jpg" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />
+				{% endif %} 
+				<span class="vlog-format-action large"><i class="fa fa-play"></i></span>    
+			</a>
+                                       <div class="vlog-format-content video">
+                                       </div>
+            </div>
+				<div class="vlog-featured-info-2 container vlog-pe-n vlog-active-hover vlog-f-hide">						
+					<div class="vlog-fa-item">
+						<div class="entry-header vlog-pe-a">
+						 <span class="entry-category">
+                            <a href="category/biography/index.html" class="vlog-cat-12">{{ post.category }}</a>
+                        </span>
+			                <h2 class="entry-title h1"><a href="{{post.url}}">{{ post.title }}</a></h2>
+                               <div class="entry-meta">
+                                   <div class="meta-item meta-date">
+                                       <span class="updated meta-icon">{{ post.date | date: "%-m/%-d/%Y" }}</span>
+                                   </div>
+                               </div>
+			             </div>	
+		             </div>
+						<div class="vlog-fa-item">
+						   <div class="entry-actions vlog-pe-a">
+						   	<a href="2018/04/398/index.html#respond" class="action-item comments" >མཆན་བུ་སྤེལ།</a>
+						   	<a class="action-item watch-later" href="javascript:void(0);" data-id="398" data-action="add"><i class="fv fv-watch-later"></i> <span class="add">རྗེས་ལ་ལྟོས།</span><span class="remove hidden">གནས་ནས་འབྱུང།</span></a>
+						   </div>
+						</div>  
+				</div>
+				<div class="vlog-format-inplay vlog-bg">
+					<div class="container">		
+					</div>
+				</div>
+      </div>
+		{% if forloop.last %}{% else %}{% endif %}
+{% endfor %}
+				
+</div>             
+<!-- Main POsts Thumbnail box starts here -->                
+        <div class="vlog-section vlog-no-sid  ">
+            <div class="container">
+                <div class="vlog-content">
+                    <div class="row row-eq-height">              
+<div class="vlog-module module-posts col-lg-12 col-md-12 col-sm-12 " id="vlog-module-0-0" data-col="12">
+    <div class="row vlog-posts row-eq-height ">	
+    <!-- Single Post Thumbnail start -->
+{% for post in paginator.posts %}
+  <article class="vlog-lay-d lay-horizontal vlog-post col-lg-6 col-sm-6 col-md-6 col-xs-12 post-236 post type-post status-publish format-standard has-post-thumbnail hentry category-finance">
+		<div class="row">
+		<div class="col-lg-6 col-sm-6 col-xs-6">
+			<div class="entry-image">
+				<a href="{{site.baseurl}}{{post.url}}">
+		{% if post.thumbnail %}			
+        <img src="{{site.baseurl}}{{post.thumbnail}}" alt="" width="249" height="140" class="attachment-vlog-lay-d-full size-vlog-lay-d-full wp-post-image" sizes="(max-width: 249px) 100vw, 249px"/>
+   				 {% else %}
+				<img src="assets/noimage.jpg" alt="" width="249" height="140" class="attachment-vlog-lay-d-full size-vlog-lay-d-full wp-post-image" sizes="(max-width: 249px) 100vw, 249px">
+		{% endif %}
+				<div class="vlog-labels x-small">
+					<span class="vlog-format-label">{{post.category}}</span>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-lg-6 col-sm-6 col-xs-6 no-left-padding">
+            <div class="entry-header">                            
+                <span class="entry-category"><a href="#" class="vlog-cat-7">{{ post.category }}</a></span>
+                <h2 class="entry-title h5"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+                <span class="entry-category"><a href="#" class="vlog-cat-7">{{ post.date | date: "%-m/%-d/%Y" }}</a></span> 
+            </div>
+        </div>
+    </div>
+	</article>
+	
+{% if forloop.last %}{% else %}{% endif %}
+{% endfor %}
+   <!-- Single Post Thumbnail Ends -->					
+ </div>
+    <nav class="vlog-pagination">
+	<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="vlog-pagination"> 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}index.html" class="prev page-numbers">དེ་སྔའི།</a> 
+  {% endif %}
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="page-numbers  current">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/" class="page-numbers  current">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}index.html" class="page-numbers current">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}index.html" class="next page-numbers">འོག་མ།</a>
+  {% endif %}
+</div>
+{% endif %}
+</nav>
+	
+</div>                                           
+                    </div>
+                </div>
+            </div>
+        </div>
