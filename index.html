@@ -9,11 +9,11 @@ title: Home
 {% for post in site.posts  %}
          <div class="vlog-featured-item video">
             <div class="vlog-cover-bg">
-            <a class="vlog-cover" href="{{site.baseurl}}{{post.url}}">
+            <a class="vlog-cover" href="{{post.url}}">
 			{% if post.thumbnail %}	
-			    <img width="1500" height="500" src="{{site.baseurl}}/{{post.thumbnail}}" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />        
+			    <img width="1500" height="500" src="{{post.thumbnail}}" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />        
    				 {% else %}
-				<img width="1500" height="500" src="{{site.baseurl}}/assets/noimage.jpg" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />
+				<img width="1500" height="500" src="assets/noimage.jpg" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />
 				{% endif %} 
 				<span class="vlog-format-action large"><i class="fa fa-play"></i></span>    
 			</a>
