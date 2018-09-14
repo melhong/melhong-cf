@@ -11,7 +11,7 @@ title: Home
             <div class="vlog-cover-bg">
             <a class="vlog-cover" href="{{site.baseurl}}{{post.url}}">
 			{% if post.thumbnail %}	
-			    <img width="1500" height="500" src="{{site.baseurl}}/{{post.thumbnail}}" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />        
+			    <img width="1500" height="500" src="{{site.baseurl}}\{{post.thumbnail}}" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />        
    				 {% else %}
 				<img width="1500" height="500" src="{{site.baseurl}}assets/noimage.jpg" class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image" alt="" />
 				{% endif %} 
@@ -65,7 +65,7 @@ title: Home
 			<div class="entry-image">
 				<a href="{{site.baseurl}}{{post.url}}">
 		{% if post.thumbnail %}			
-        <img src="{{site.baseurl}}/{{post.thumbnail}}" alt="" width="249" height="140" class="attachment-vlog-lay-d-full size-vlog-lay-d-full wp-post-image" sizes="(max-width: 249px) 100vw, 249px"/>
+        <img src="{{site.baseurl}}{{post.thumbnail}}" alt="" width="249" height="140" class="attachment-vlog-lay-d-full size-vlog-lay-d-full wp-post-image" sizes="(max-width: 249px) 100vw, 249px"/>
    				 {% else %}
 				<img src="assets/noimage.jpg" alt="" width="249" height="140" class="attachment-vlog-lay-d-full size-vlog-lay-d-full wp-post-image" sizes="(max-width: 249px) 100vw, 249px">
 		{% endif %}
