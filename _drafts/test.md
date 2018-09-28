@@ -1,5 +1,9 @@
 ---
 title: test
 date: 2018-09-28 05:09:46 +0000
+category: test category
+thumbnail: "/uploads/17340141665_a14747a9da_h.jpg"
+featured_video: http://s3.amazonaws.com/melhong/wp-content/uploads/2018/09/27235126/Fuku-final-cut-3-1.mp4
+main_content: ''
 
 ---
