@@ -39,4 +39,4 @@ fields:
   config:
     required: true
 pages:
-- _posts/testmypost.md
+- _posts/2018-09-28-testmypost.md
