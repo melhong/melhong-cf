@@ -35,3 +35,5 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+pages:
+- _posts/testing-post.md
