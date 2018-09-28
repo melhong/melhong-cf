@@ -23,7 +23,7 @@ fields:
     maxSize: '1'
 - type: text
   label: Featured video
-  name: featured_video
+  name: featuredvideo
   description: Put you featured video link here
   config:
     required: true
