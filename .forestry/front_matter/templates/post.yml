@@ -2,4 +2,36 @@
 label: post
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: title
+  description: post title
+  label: post title
+  config:
+    required: true
+- type: text
+  label: Category
+  name: category
+  description: Type your Post category
+  config:
+    required: true
+- type: file
+  name: thumbnail
+  label: thumbnail
+  description: thumbnail picture
+  config:
+    maxSize: '1'
+- type: text
+  label: Featured video
+  name: featured_video
+  description: Put you featured video link here
+  config:
+    required: true
+- type: textarea
+  label: Main Content
+  name: main_content
+  description: Put you main content here. Else leave it blank
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
