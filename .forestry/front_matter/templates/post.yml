@@ -7,10 +7,13 @@ fields:
   config:
     source:
       type: simple
-    required: false
+      section: jekyll-posts
+    required: true
+    options:
+    - post
   name: layout
   description: Layout can be type of content you are posting
-  hidden: true
+  hidden: false
 - type: text
   name: title
   description: post title
