@@ -38,5 +38,3 @@ fields:
   description: Put you featured video link here
   config:
     required: true
-pages:
-- _posts/titrr.md
