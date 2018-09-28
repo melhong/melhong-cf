@@ -38,5 +38,3 @@ fields:
   description: Put you featured video link here
   config:
     required: true
-pages:
-- _posts/2018-09-28-testmypost.md
