@@ -3,6 +3,14 @@ label: post
 hide_body: false
 is_partial: false
 fields:
+- type: select
+  config:
+    source:
+      type: simple
+    required: false
+  name: layout
+  description: Layout can be type of content you are posting
+  hidden: true
 - type: text
   name: title
   description: post title
@@ -27,13 +35,5 @@ fields:
   description: Put you featured video link here
   config:
     required: true
-- type: textarea
-  label: Main Content
-  name: main_content
-  description: Put you main content here. Else leave it blank
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
 pages:
 - _posts/2018-09-28-testing-post.md
