@@ -38,3 +38,5 @@ fields:
   description: Put you featured video link here
   config:
     required: true
+pages:
+- _posts/བྱིས-པ-བྱམས-དང-ཐབས-ཀྱིས-སྐྱོང-དགོས.md
