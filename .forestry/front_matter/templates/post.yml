@@ -14,18 +14,17 @@ fields:
   name: layout
   description: Layout can be type of content you are posting
   hidden: false
+  default: post
 - type: text
   name: title
   description: post title
   label: post title
   config:
     required: true
-- type: text
-  label: Category
+- type: tag_list
   name: category
-  description: Type your Post category
-  config:
-    required: true
+  label: Category
+  description: Hit enter to add multiple category.
 - type: file
   name: thumbnail
   label: thumbnail
