@@ -3,6 +3,7 @@ layout: post
 title: བུད་མེད་དང་བྱིས་པར་མནར་གཅོད་མ་གཏོང་། (ཁམས་སྐད /ཨམ་སྐད)
 category:
 - སྤྱི་ཚོགས།
+permalink: /:year/:month/:day/:title
 thumbnail: assets/img/Picture1-249x140.jpg
 featuredvideo: http://s3.amazonaws.com/melhong/wp-content/uploads/2019/01/19215747/Domestic-V-kham.mp4
 date: 2019-01-21 05:13:22 +0000

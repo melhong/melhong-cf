@@ -1,6 +1,7 @@
 ---
 layout: post
 title: དངུལ་དངོས་ཀྱི་རྒྱུ་ནོར་དང་བསམ་པའི་རྒྱུ་ནོར། (ཨམ་སྐད། / ཁམས་སྐད།)
+permalink: /:year/:month/:day/:title
 category:
 - དཔལ་འབྱོར།
 thumbnail: assets/img/Asset-Liability1-249x140.jpg

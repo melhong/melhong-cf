@@ -1,5 +1,6 @@
 ---
 title: སྨན་ཁང་དུ་བོད་སྐད་ཀྱི་སྐད་སྒྱུར་བ་དགོས།
+permalink: /:year/:month/:day/:title
 date: 2018-10-23 10:17:46 +0000
 layout: post
 category: " ལྟ་ཞིབ།"

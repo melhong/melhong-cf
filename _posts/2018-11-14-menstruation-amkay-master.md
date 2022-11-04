@@ -1,5 +1,6 @@
 ---
 title: རང་གིས་རང་ལ་དམའ་ཕབ་མི་རུང་།(ཨམ་སྐད།)
+permalink: /:year/:month/:day/:title
 date: 2018-11-14 09:29:26 +0000
 layout: post
 category:

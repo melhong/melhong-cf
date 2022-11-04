@@ -1,6 +1,7 @@
 ---
 layout: post
 title: དབུས་ལམ་གྱི་བསླབ་བྱ། (ཁམས་སྐད།)
+permalink: /:year/:month/:day/:title
 author: མེ་ལོང་།
 category: སྤྱི་ཚོགས།
 description: 
