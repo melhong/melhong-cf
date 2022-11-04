@@ -2,18 +2,6 @@
 label: post
 hide_body: false
 fields:
-- type: select
-  config:
-    source:
-      type: simple
-      section: jekyll-posts
-    required: true
-    options:
-    - post
-  name: layout
-  description: Layout can be type of content you are posting
-  hidden: false
-  default: post
 - type: text
   name: title
   description: post title
