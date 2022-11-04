@@ -3,7 +3,6 @@ layout: post
 title: སྦྲུམ་མའི་ཟས་སྤྱོད་ནི་བྱིས་པའི་མ་འོངས་པ་ཡིན། (ཁམས་སྐད/ཨམ་སྐད)
 category:
 - འཕྲོད་བསྟེན།
-permalink: /:year/:month/:day/:title
 thumbnail: assets/img/Medicaid-Prenatal-Care-Services1-249x140.jpg
 featuredvideo: http://s3.amazonaws.com/melhong/wp-content/uploads/2019/01/13033847/PRENATAL-CARE-KHAMKE.mp4
 date: 2019-01-18 04:54:20 +0000
